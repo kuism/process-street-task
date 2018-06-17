@@ -1,0 +1,101 @@
+.pt-page-flipOutLeft {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    @include animation("flipOutLeft .5s both ease-in");
+}
+
+.pt-page-flipInRight {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+
+    @include animation("flipInRight .6s both ease-out");
+}
+
+.pt-page-moveToLeft {
+    @include animation("moveToLeft 1s ease-in-out both");
+}
+
+.pt-page-moveFromLeft {
+    @include animation("moveFromLeft 1s ease-in-out both");
+}
+
+.pt-page-moveToRight {
+    @include animation("moveToRight 1s ease-in-out both");
+}
+
+.pt-page-moveFromRight {
+    @include animation("moveFromRight 1s ease-in-out both");
+}
+
+.pt-page-moveToTop {
+    @include animation("moveToTop 1s ease-in-out both");
+}
+
+.pt-page-moveFromTop {
+    @include animation("moveFromTop 1s ease-in-out both");
+}
+
+.pt-page-moveToBottom {
+    @include animation("moveToBottom 1s ease-in-out both");
+}
+
+.pt-page-moveFromBottom {
+    @include animation("moveFromBottom 1s ease-in-out both");
+}
+
+/* fade */
+.pt-page-fade {
+    @include animation("fade 1s ease both");
+}
+
+.pt-page-fadeInto {
+    @include animation("fadeInto 1s linear both");
+}
+
+.pt-page-fadeOutOf {
+    @include animation("fadeOutOf .5s linear both");
+}
+
+
+/* animation delay classes */
+
+.pt-page-delay100 {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+
+.pt-page-delay180 {
+    -webkit-animation-delay: .180s;
+    animation-delay: .180s;
+}
+
+.pt-page-delay200 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.pt-page-delay300 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.pt-page-delay400 {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.pt-page-delay500 {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.pt-page-delay700 {
+    -webkit-animation-delay: .7s;
+    animation-delay: .7s;
+}
+
+.pt-page-delay1000 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}

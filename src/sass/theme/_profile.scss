@@ -1,0 +1,183 @@
+.panel .panel-body h3 {
+	&.with-line {
+		margin-top: 0;
+	}
+}
+
+.userpic {
+	border: 1px dashed #b8b8b8;
+	width: 202px;
+	height: 202px;
+	position: relative;
+	
+	.userpic-wrapper {
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	img {
+		max-width: 100%;
+		max-height: 100%;
+		min-height: 100px;
+		background: #f7f7f7;
+	}
+	
+	i {
+		display: none;
+		position: absolute;
+		font-size: 32px;
+		background: $default;
+		cursor: pointer;
+		color: $info;
+		top: -11px;
+		right: -11px;
+		height: 26px;
+		border-radius: 50%;
+		&:before {
+			line-height: 26px;
+		}
+		&:hover {
+			color: $danger;
+		}
+	}
+
+	.change-userpic {
+		display: none;
+		width: 202px;
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.7);
+		transition: all 200ms ease-in-out;
+		color: $default;
+		text-decoration: none;
+		position: absolute;
+		bottom: -1px;
+		left: -1px;
+		line-height: 32px;
+		text-align: center;
+	}
+	
+	&:hover {
+		i {
+			display: block;
+		}
+		.change-userpic {
+			display: block;
+		}
+	}
+
+	.progress {
+		position: absolute;
+		top: 45%;
+		width: 100%;
+	}
+}
+
+$snColor: $info;
+$snPadding: 8px;
+.sn-link {
+	transition: none;
+	display: block;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: $snPadding;
+	color: $default-text;
+	border: 2px solid $default-text;
+	margin-bottom: 23px;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+	text-decoration: none !important;
+	i.socicon {
+		padding: 6px;
+		border-radius: 50%;
+		width: auto;
+		font-size: 17px;
+		margin-right: 8px;
+		background-color: rgba(0,0,0,.15);
+		color: $default-text;
+	}
+
+	span {
+		font-size: 14px;
+		line-height: 29px;
+	}
+
+	@mixin activeSn() {
+		border-color: $snColor;
+		border-width: 2px;
+		span {
+			color: $default-text;
+		}
+		i {
+			background: $snColor;
+			color: $default;
+		}
+	}
+
+	&.connected {
+		@include activeSn();
+		em {
+			display: block;
+		}
+	}
+	&:hover {
+		@include activeSn();
+	}
+
+	.socicon {
+		background: transparent;
+	}
+}
+
+.close {
+	opacity: 1;
+	box-shadow: none;
+	outline: none !important;
+	&:hover, &:focus, &:active {
+		opacity: 1;
+	}
+}
+
+.connected .sn-link-close {
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 32px;
+	color: $snColor;
+	transition: all 0.1s ease;
+	outline: none;
+	&:hover {
+		color: $danger;
+		transform: scale(1.2);
+	}
+}
+
+.social-profiles {
+	padding-top: 3px;
+	margin-bottom: -3px;
+	padding-left: 12px;
+}
+
+.profile-page {
+	.form-group {
+		display: flex;
+		align-items: center;
+
+		label {
+			line-height: 34px;
+			font-size: 14px;
+			font-weight: $font-light;
+		}
+		input{
+			font-weight: $font-light;
+		}
+	}
+}
+

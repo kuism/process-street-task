@@ -1,0 +1,23 @@
+<div class="modal-content confirm-modal">
+	<div class="col-xs-12 modal-header bg-info">
+		<button type="button" class="close" ng-click="$dismiss()" aria-label="Close">
+			<em class="ion-ios-close-empty sn-link-close"></em>
+		</button>
+		<h3 class="col-xs-12 noLRPadding modal-title text-center">Confirm Action</h3>
+	</div>
+	<div class="col-xs-12 modal-body flexRow flexCenter">
+		<span class="col-xs-12 noLRPadding text-center">{{title}}</span>
+	</div>
+	<div class="col-xs-12 modal-body flexRow flexCenter" ng-if="showRemoveAll">
+		<div class="inputContainer flexRow flexCenter">
+			<label class="checkbox checkbox-inline custom-checkbox nowrap" ng-class="{'is-checked': remove_all}">
+				<input type="checkbox" id="inlineCheckboxremoveall" ng-model="data.remove_all" ng-true-value="true" ng-false-value="false" />
+				<span>Archive item from all screens</span>
+			</label>
+		</div>
+	</div>
+	<div class="modal-footer flexRow flexCenter">
+		<button type="button" class="btn btn-success" ng-click="actionConfirmed();">Yes</button>
+		<button type="button" class="btn btn-danger" ng-click="actionCancelled();">No</button>
+	</div>
+</div>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<base href="/" />
+		<title>Process Street</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+		<meta name="mobile-web-app-capable" content="yes"/>
+		<meta name="theme-color" content="#000000" />
+		<link rel="icon" type="image/png" href="/assets/favicons/favicon.ico" />
+
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i'/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,900" rel="stylesheet"/>
+		<link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+
+		<!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+		<!-- bower:css -->
+		<!-- run `gulp inject` to automatically populate bower styles dependencies -->
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:css({.tmp/serve,src}) styles/app.css -->
+		<!-- inject:css -->
+		<!-- css files will be automatically insert here -->
+		<!-- endinject -->
+		<!-- endbuild -->
+	</head>
+
+	<body ng-app="myApp">
+		<div class="body-bg"></div>
+		<main ng-class="{ 'menu-collapsed': $baSidebarService.isMenuCollapsed() }">
+			<ba-sidebar ng-if="!$hideSidebar"></ba-sidebar>
+			<page-top ng-if="!$hideSidebar"></page-top>
+
+			<div class="al-main">
+				<div class="al-content">
+					 <!-- <content-top ng-if="!$hideSidebar"></content-top>  -->
+					<div ui-view autoscroll="true" autoscroll-body-top></div>
+				</div>
+			</div>
+
+			<back-top></back-top>
+		</main>
+
+		<div ng-if="false">
+			<style>
+				.al-main, .al-content {
+					margin: 0;
+					padding: 0;
+				}
+			</style>
+		</div>
+
+		<div id="preloader" ng-if="!$pageFinishedLoading" class="fadeTransition">
+			<div>
+				<span>
+					<span>Process Street</span>
+					<double-bounce-spinner></double-bounce-spinner>
+				</span>
+			</div>
+		</div>
+
+		<!-- build:js(src) scripts/vendor.js -->
+		<!-- bower:js -->
+		<!-- run `gulp inject` to automatically populate bower script dependencies -->
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+		<!-- inject:js -->
+		<!-- js files will be automatically insert here -->
+		<!-- endinject -->
+		<script src="assets/js/vendor/jquery.ui.widget.js"></script>
+		<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+		<script src="https://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+		<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+		<script src="https://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+		<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- blueimp Gallery script -->
+		<script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+		<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+		<script src="assets/js/vendor/jquery.iframe-transport.js"></script>
+		<!-- The basic File Upload plugin -->
+		<script src="assets/js/vendor/jquery.fileupload.js"></script>
+		<!-- The File Upload processing plugin -->
+		<script src="assets/js/vendor/jquery.fileupload-process.js"></script>
+		<!-- The File Upload image preview & resize plugin -->
+		<script src="assets/js/vendor/jquery.fileupload-image.js"></script>
+		<!-- The File Upload audio preview plugin -->
+		<script src="assets/js/vendor/jquery.fileupload-audio.js"></script>
+		<!-- The File Upload video preview plugin -->
+		<script src="assets/js/vendor/jquery.fileupload-video.js"></script>
+		<!-- The File Upload validation plugin -->
+		<script src="assets/js/vendor/jquery.fileupload-validate.js"></script>
+		<!-- The File Upload Angular JS module -->
+		<script src="assets/js/vendor/jquery.fileupload-angular.js"></script>
+		<script src="assets/js/vendor/app.js"></script>
+		<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+		<script>
+            window.wistiaInit = function(W) {
+                console.log("Wistia library loaded and available in the W argument!");
+                window.Wistia = W;
+            };
+		</script>
+
+		<!-- inject:partials -->
+		<!-- angular templates will be automatically converted in js and inserted here -->
+		<!-- endinject -->
+		<!-- endbuild -->
+
+	</body>
+</html>

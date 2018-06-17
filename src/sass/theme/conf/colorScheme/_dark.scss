@@ -1,0 +1,60 @@
+$default: #ffffff;
+$body-bg: #F0F3F4;
+$default-text: #666666;
+$help-text: #949494;
+$label-text: #ffffff;
+
+$disabled: #dddddd;
+$disabled-bg: tint($disabled, 15%);
+$border: #d6d6d6;
+$border-light: tint($border, 15%);
+$input-border: shade($border, 5%);
+$input-background: #ffffff;
+
+$sidebar: #1C2B36;
+$sidebar-text: #7f90a4;
+$dropdown-text: #7d7d7d;
+$sidebar-selected-background: #131720;
+$bootstrap-panel-text: #7d7d7d;
+$bootstrap-panel-bg: #ffffff;
+$mail-box: whitesmoke;
+$auth-panel-background: #ffffff;
+$progress-background: rgba(#000000, 0.07);
+$progress-default: rgba(#000000, 0.15);
+
+$primary: #ff4b4b !default;
+$info: #4da1ff !default;
+$success: #90b900 !default;
+$warning: #f5a623 !default;
+$danger: #ff6d4a !default;
+$violet:#7c4dc4 !default;
+
+
+$primary-light: tint($primary, 30%);
+$info-light: tint($info, 30%);
+$success-light: tint($success, 30%);
+$warning-light: tint($warning, 30%);
+$danger-light: tint($danger, 30%);
+$violet-light: tint($violet, 30%);
+
+$primary-dark: shade($primary, 15%);
+$info-dark: shade($info, 15%);
+$success-dark: shade($success, 15%);
+$warning-dark: shade($warning, 15%);
+$danger-dark: shade($danger, 15%);
+$violet-dark: shade($violet, 15%);
+
+$primary-bg: tint($primary, 20%);
+$info-bg: tint($info, 20%);
+$success-bg: tint($success, 20%);
+$warning-bg: tint($warning, 20%);
+$danger-bg: tint($danger, 20%);
+$violet-bg: tint($violet, 20%);
+
+
+
+$warning-bg-light:#ffdfab;
+$violet-bg-light:#dbcaf5;
+$success-bg-light: #e6f3bb;
+$info-bg-light:#cfe5fd;
+$danger-bg-light:#fbd3ca;

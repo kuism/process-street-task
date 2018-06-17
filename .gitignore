@@ -1,0 +1,22 @@
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
+*.iml
+
+## Directory-based project format:
+.idea/
+/.vscode
+
+node_modules
+/npm-debug.log
+
+gulp.1
+.tmp
+
+bower_components
+
+/src/release
+/release
+build
+/polebusiness.zip
+/polebusinessweb.zip
+
+
