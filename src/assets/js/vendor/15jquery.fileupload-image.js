@@ -23,7 +23,7 @@
             'load-image-scale',
             'load-image-exif',
             'canvas-to-blob',
-            './jquery.fileupload-process'
+            './14jquery.fileupload-process'
         ], factory);
     } else if (typeof exports === 'object') {
         // Node/CommonJS:
@@ -34,7 +34,7 @@
             require('blueimp-load-image/js/load-image-scale'),
             require('blueimp-load-image/js/load-image-exif'),
             require('blueimp-canvas-to-blob'),
-            require('./jquery.fileupload-process')
+            require('./14jquery.fileupload-process')
         );
     } else {
         // Browser globals:

@@ -19,14 +19,14 @@
         define([
             'jquery',
             'load-image',
-            './jquery.fileupload-process'
+            './14jquery.fileupload-process'
         ], factory);
     } else if (typeof exports === 'object') {
         // Node/CommonJS:
         factory(
             require('jquery'),
             require('blueimp-load-image/js/load-image'),
-            require('./jquery.fileupload-process')
+            require('./14jquery.fileupload-process')
         );
     } else {
         // Browser globals:

@@ -19,20 +19,20 @@
         define([
             'jquery',
             'app/bower_components/angular/angular',
-            './jquery.fileupload-image',
-            './jquery.fileupload-audio',
-            './jquery.fileupload-video',
-            './jquery.fileupload-validate'
+            './15jquery.fileupload-image',
+            './16jquery.fileupload-audio',
+            './17jquery.fileupload-video',
+            './18jquery.fileupload-validate'
         ], factory);
     } else if (typeof exports === 'object') {
         // Node/CommonJS:
         factory(
             require('jquery'),
             require('app/bower_components/angular/angular'),
-            require('./jquery.fileupload-image'),
-            require('./jquery.fileupload-audio'),
-            require('./jquery.fileupload-video'),
-            require('./jquery.fileupload-validate')
+            require('./15jquery.fileupload-image'),
+            require('./16jquery.fileupload-audio'),
+            require('./17jquery.fileupload-video'),
+            require('./18jquery.fileupload-validate')
         );
     } else {
         factory();

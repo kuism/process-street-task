@@ -1,5 +1,5 @@
 gulp build
-rm polebusinessweb.zip
-zip -r polebusinessweb.zip release/
-scp polebusinessweb.zip ubuntu@poletalks.com:~/
+rm processstreet.zip
+zip -r processstreet.zip release/
+scp processstreet.zip ubuntu@poletalks.com:~/
 ssh ubuntu@poletalks.com

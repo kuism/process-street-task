@@ -24,7 +24,7 @@
         // Node/CommonJS:
         factory(
             require('jquery'),
-            require('./jquery.ui.widget')
+            require('./11jquery.ui.widget')
         );
     } else {
         // Browser globals:
